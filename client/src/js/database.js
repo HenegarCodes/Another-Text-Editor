@@ -33,13 +33,13 @@ export const putDb = async (content) => {
 export const getDb = async () => {
   // Db & vers
   const jateDB = await openDB("jate", 1);
-  // New transaction specifying db and privileges
+  // New process
   const dbx = jateDB.transaction("jate", "readonly");
-  // Open desired object store
+  // Open store
   const storing = dbx.objectStore("jate");
-  // Get all request
+  // request
   const request = storing.getAll();
-  // Confirmation and return
+  // Confirm
   const result = await request;
   console.log("data is read from datbase", result);
   return result.value;
