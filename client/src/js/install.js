@@ -6,6 +6,10 @@ window.addEventListener('beforeinstallprompt', (event) => {
     console.log("BUTTON HIT")
     console.log("event:" + event)
     event.preventDefault();
+
+    window.defferedPrompt = event;
+
+    butInstall.classList.toggle('hidden', false);
 });
 
 // TODO: Implement a click event handler on the `butInstall` element
