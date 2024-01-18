@@ -15,16 +15,13 @@ const initdb = async () =>
 // TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
   // Dd & vers
-  const jateDB = await openDB("jate", 1);
-  // New db
-  const tx = jateDB.transaction("jate", "readwrite");
-  // open store
-  const store = tx.objectStore("jate");
-  // Pass through
+  console.log('Update database');
+  const jateDb = await openDB('jate', 1);
+  const tx = jateDb.transaction('jate', 'readwrite');
+  const store = tx.objectStore('jate');
   const request = store.put({ id: 1, value: content });
-  // Confirm
   const result = await request;
-  console.log("data is in datbase", result);
+  console.log(result);
 };
 
 
@@ -32,17 +29,21 @@ export const putDb = async (content) => {
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
   // Db & vers
-  const jateDB = await openDB("jate", 1);
-  // New process
-  const tx = jateDB.transaction("jate", "readonly");
-  // Open store
-  const store = tx.objectStore("jate");
-  // request
+  console.log('GET from the database');
+
+  // Create a connection to the database database 
+  const jateDb = await openDB('jate', 1);
+
+  // Create a new transaction
+  const tx = jateDb.transaction('jate', 'readonly');
+  const store = tx.objectStore('jate');
+
+  // Use the .getAll() method to get all data in the database.
   const request = store.getAll();
-  // Confirm
+  // Get confirmation 
   const result = await request;
-  console.log("data is read from datbase", result);
-  return result.value;
+  console.log('result.value', result);
+  return result;
 };
 
 initdb();
