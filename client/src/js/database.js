@@ -17,11 +17,11 @@ export const putDb = async (content) => {
   // Dd & vers
   const jateDB = await openDB("jate", 1);
   // New db
-  const dbx = jateDB.transaction("jate", "readwrite");
+  const tx = jateDB.transaction("jate", "readwrite");
   // open store
-  const storing = dbx.objectStore("jate");
+  const store = tx.objectStore("jate");
   // Pass through
-  const request = storing.put({ id: 1, value: content });
+  const request = store.put({ id: 1, value: content });
   // Confirm
   const result = await request;
   console.log("data is in datbase", result);
@@ -34,11 +34,11 @@ export const getDb = async () => {
   // Db & vers
   const jateDB = await openDB("jate", 1);
   // New process
-  const dbx = jateDB.transaction("jate", "readonly");
+  const tx = jateDB.transaction("jate", "readonly");
   // Open store
-  const storing = dbx.objectStore("jate");
+  const store = tx.objectStore("jate");
   // request
-  const request = storing.getAll();
+  const request = store.getAll();
   // Confirm
   const result = await request;
   console.log("data is read from datbase", result);
