@@ -32,7 +32,7 @@ https://just-another-text-editor-3aqo.onrender.com
 
 
 https://just-another-text-editor-3aqo.onrender.com
-[Untitled_ Jan 21, 2024 2_56 PM.webm](https://github.com/HenegarCodes/Another-Text-Editor/assets/78831747/c7dfe997-508d-4044-b799-9f68aa6c2adb)
+(https://github.com/HenegarCodes/Another-Text-Editor/assets/78831747/95cf9e50-f6cd-4f75-a430-733d3d908733)
 
 ## Credits
 
