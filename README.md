@@ -28,7 +28,7 @@ Naviagte to your IDE terminal:
 Once it says it is running in the terminal naviagte to your web browser and lookup `http://localhost:3002`
 
 ## Usage
-
+[Untitled_ Jan 21, 2024 2_56 PM.webm](https://github.com/HenegarCodes/Another-Text-Editor/assets/78831747/c7dfe997-508d-4044-b799-9f68aa6c2adb)
 
 ## Credits
 
