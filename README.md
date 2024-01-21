@@ -32,7 +32,7 @@ https://just-another-text-editor-3aqo.onrender.com
 
 
 
-(https://github.com/HenegarCodes/Another-Text-Editor/assets/78831747/95cf9e50-f6cd-4f75-a430-733d3d908733)
+https://github.com/HenegarCodes/Another-Text-Editor/assets/78831747/95cf9e50-f6cd-4f75-a430-733d3d908733
 
 ## Credits
 
